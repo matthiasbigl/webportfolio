@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/webportfolio/static/css/main.cac0fdae.chunk.css",
+    "main.js": "/webportfolio/static/js/main.fc3e0df2.chunk.js",
+    "main.js.map": "/webportfolio/static/js/main.fc3e0df2.chunk.js.map",
+    "runtime-main.js": "/webportfolio/static/js/runtime-main.66cd2b96.js",
+    "runtime-main.js.map": "/webportfolio/static/js/runtime-main.66cd2b96.js.map",
+    "static/js/2.09016766.chunk.js": "/webportfolio/static/js/2.09016766.chunk.js",
+    "static/js/2.09016766.chunk.js.map": "/webportfolio/static/js/2.09016766.chunk.js.map",
+    "static/js/3.5214cd38.chunk.js": "/webportfolio/static/js/3.5214cd38.chunk.js",
+    "static/js/3.5214cd38.chunk.js.map": "/webportfolio/static/js/3.5214cd38.chunk.js.map",
+    "index.html": "/webportfolio/index.html",
+    "static/css/main.cac0fdae.chunk.css.map": "/webportfolio/static/css/main.cac0fdae.chunk.css.map",
+    "static/js/2.09016766.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.09016766.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/webportfolio/static/media/Poppins-Thin.a61eaf4c.ttf",
+    "static/media/Profile.css": "/webportfolio/static/media/solid-color-image.1533debc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66cd2b96.js",
+    "static/js/2.09016766.chunk.js",
+    "static/css/main.cac0fdae.chunk.css",
+    "static/js/main.fc3e0df2.chunk.js"
+  ]
+}
