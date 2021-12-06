@@ -12,6 +12,7 @@
 }
 
 .profile-parent {
+    margin-top:2.5rem;
     display: flex;
     align-items: center;
     color: aliceblue;
@@ -56,14 +57,14 @@
 }
 
 .profile-picture {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px #001450;
     border-radius: 50%;
     height: 380px;
     width: 380px;
-    margin: 0 0 100px;
+    margin-left:8rem;
 }
 
 .profile-picture-background {

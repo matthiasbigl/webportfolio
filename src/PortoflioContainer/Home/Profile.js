@@ -45,7 +45,9 @@ export default function Profile() {
                                              1500,
                                              "HTML & CSS",
                                              1500,
-                                             "Javascript, React",
+                                             "Javascript",
+                                             1500,
+                                             "React",
                                              1500,
                                          ]}/>
 
