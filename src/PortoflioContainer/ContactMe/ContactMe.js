@@ -3,9 +3,6 @@ import * as emailjs from "emailjs-com";
 import {Button, Form, FormControl, InputGroup} from "react-bootstrap";
 import "./ContactMe.css"
 
-const SERVICE_ID = "service_0v7etgc";
-const TEMPLATE_ID = "template_76bhk81";
-const USER_ID = "user_S2EFRasWeJBpGtvAoLiCb";
 
 
 
@@ -14,7 +11,7 @@ export default function ContactUs() {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('gmail', 'youtube_template', e.target, 'user_JABO21I8Gm6sxByJH17Nu')
+        emailjs.sendForm('service_xpqw3ri', 'template_b9xnr48', e.target, 'user_S2EFRasWeJBpGtvAoLiCb')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -35,11 +32,11 @@ export default function ContactUs() {
                     </h1>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                         <Form.Label className="primary-text">Email address</Form.Label>
-                        <Form.Control type="email" placeholder="name@example.com" />
+                        <Form.Control type="email" placeholder="name@example.com" name="email"/>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                         <Form.Label className="primary-text">Example textarea</Form.Label>
-                        <Form.Control as="textarea" rows={5} />
+                        <Form.Control as="textarea" rows={5} name="message"/>
                     </Form.Group>
                     <div className="submitBtn">
                         <Button type="submit" className='btn primary-btn'>
@@ -55,4 +52,3 @@ export default function ContactUs() {
 
 }
 
-export default ContactMe;
