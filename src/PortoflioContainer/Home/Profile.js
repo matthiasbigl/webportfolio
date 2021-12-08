@@ -1,9 +1,11 @@
 import React from 'react';
 import Typical from 'react-typical';
 import './Profile.css'
+import Footer from "./Footer/Footer";
 
 export default function Profile() {
     return (
+        <>
         <div className='profile-container'>
             <div className='profile-parent'>
                 <div className='profile-details'>
@@ -59,7 +61,7 @@ export default function Profile() {
                         </span>
                         </div>
                         <div className='profile-options'>
-                            <button class='btn primary-btn'>
+                            <button className='btn primary-btn'>
                                 {" "}
                                 Hire Me {" "}
                             </button>
@@ -73,6 +75,9 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
+        <Footer/>
+            </>
+
             )
 
 

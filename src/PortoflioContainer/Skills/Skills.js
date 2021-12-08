@@ -1,39 +1,53 @@
 import React from 'react';
-import {
-    MDBCarousel,
-    MDBCarouselInner,
-    MDBCarouselItem,
-    MDBCarouselElement,
-    MDBCarouselCaption
-} from 'mdb-react-ui-kit';
+import {Carousel} from "react-bootstrap"; // requires a loader
+import "./Skills.css"
+
 
 export default function Skills() {
     return (
-        <MDBCarousel showControls showIndicators dark fade>
-            <MDBCarouselInner>
-                <MDBCarouselItem className='active'>
-                    <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(19).jpg' alt='...' />
-                    <MDBCarouselCaption>
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </MDBCarouselCaption>
-                </MDBCarouselItem>
-                <MDBCarouselItem>
-                    <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg' alt='...' />
-                    <MDBCarouselCaption>
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </MDBCarouselCaption>
-                </MDBCarouselItem>
+        <>
+           <div clasName="SkillsContainer">
+               <div className="Carousel">
+                   <Carousel variant="dark">
+                       <Carousel.Item>
+                           <img
+                               className="d-block w-100"
+                               src={require("../../assets/Skills/java.jpg").default}
+                               alt="First slide"
+                           />
+                           <Carousel.Caption>
+                               <h5>First slide label</h5>
+                               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                           </Carousel.Caption>
+                       </Carousel.Item>
+                       <Carousel.Item>
+                           <img
+                               className="d-block w-100"
+                               src={require("../../assets/Skills/Java-Developer-Skills.jpg").default}
+                               alt="Second slide"
+                           />
+                           <Carousel.Caption>
+                               <h5>Second slide label</h5>
+                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                           </Carousel.Caption>
+                       </Carousel.Item>
+                       <Carousel.Item>
+                           <img
+                               className="d-block w-100"
+                               src={require("../../assets/Skills/Java-Developer-Skills.jpg").default}
+                               alt="Third slide"
+                           />
+                           <Carousel.Caption>
+                               <h5>Third slide label</h5>
+                               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                           </Carousel.Caption>
+                       </Carousel.Item>
+                   </Carousel>
+               </div>
 
-                <MDBCarouselItem>
-                    <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(40).jpg' alt='...' />
-                    <MDBCarouselCaption>
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </MDBCarouselCaption>
-                </MDBCarouselItem>
-            </MDBCarouselInner>
-        </MDBCarousel>
-    );
+           </div>
+        </>
+
+
+    )
 }

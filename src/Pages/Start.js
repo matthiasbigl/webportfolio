@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../Style.css"
 
 import Profile from "../PortoflioContainer/Home/Profile";
 import Navbar from "../PortoflioContainer/Navbar/navbar";
@@ -14,7 +13,7 @@ export default function Start() {
  <div className="App">
      <Navbar/>
      <Profile/>
-
+     <Skills/>
      <ContactMe/>
 
  </div>

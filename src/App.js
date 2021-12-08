@@ -1,23 +1,30 @@
 import React from "react";
-import './App.css';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Start from "./Pages/Start";
+import InConstruction from "./Pages/InConstruction";
 
-import Profile from "./PortoflioContainer/Home/Profile";
-import Footer from "./PortoflioContainer/Home/Footer/Footer";
-import Navbar from "./PortoflioContainer/Navbar/navbar";
-import ContactMe from "./PortoflioContainer/ContactMe/ContactMe";
-import Skills from "./PortoflioContainer/Skills/Skills";
-import { Link, animateScroll as scroll } from "react-scroll";
+
+
+
 
 function App() {
-    return (
- <div className="App">
-     <Navbar/>
-     <Profile/>
-     <Footer/>
-     <ContactMe/>
-     <Skills/>
 
- </div>
+    return (
+        <div className="App">
+            
+            <Start/>
+            <Router>
+                <Routes>
+                    <Route path="/webportfolio/" component={<InConstruction/>}/>
+                    <Route path="/webportfolio/inConstruction" component={<InConstruction/>}/>
+                    <Route path="/webportfolio/start" component={<Start/>}/>
+                </Routes>
+            </Router>
+        </div>
+
+
+
+
     );
 }
 
