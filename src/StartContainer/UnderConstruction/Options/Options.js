@@ -13,7 +13,7 @@ class Option extends Component {
             <div className="optin">
                 <p className="Warning">Warning: many features wont work this is <strong>not a finished Product</strong></p>
                 <p>Want to see the progress so far ?</p>
-                <Link to="/start" >
+                <Link to="/webportfolio/start" >
                 <button className='btn primary-btn'> Sure</button>
                 </Link>
             </div>
