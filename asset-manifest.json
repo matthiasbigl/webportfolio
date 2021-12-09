@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/webportfolio/static/css/main.cac0fdae.chunk.css",
-    "main.js": "/webportfolio/static/js/main.fcaf932e.chunk.js",
-    "main.js.map": "/webportfolio/static/js/main.fcaf932e.chunk.js.map",
-    "runtime-main.js": "/webportfolio/static/js/runtime-main.66cd2b96.js",
-    "runtime-main.js.map": "/webportfolio/static/js/runtime-main.66cd2b96.js.map",
-    "static/js/2.09016766.chunk.js": "/webportfolio/static/js/2.09016766.chunk.js",
-    "static/js/2.09016766.chunk.js.map": "/webportfolio/static/js/2.09016766.chunk.js.map",
-    "static/js/3.5214cd38.chunk.js": "/webportfolio/static/js/3.5214cd38.chunk.js",
-    "static/js/3.5214cd38.chunk.js.map": "/webportfolio/static/js/3.5214cd38.chunk.js.map",
+    "main.css": "/webportfolio/static/css/main.37300ba5.chunk.css",
+    "main.js": "/webportfolio/static/js/main.2c377be5.chunk.js",
+    "main.js.map": "/webportfolio/static/js/main.2c377be5.chunk.js.map",
+    "runtime-main.js": "/webportfolio/static/js/runtime-main.667d8296.js",
+    "runtime-main.js.map": "/webportfolio/static/js/runtime-main.667d8296.js.map",
+    "static/js/2.fe4ed999.chunk.js": "/webportfolio/static/js/2.fe4ed999.chunk.js",
+    "static/js/2.fe4ed999.chunk.js.map": "/webportfolio/static/js/2.fe4ed999.chunk.js.map",
     "index.html": "/webportfolio/index.html",
-    "static/css/main.cac0fdae.chunk.css.map": "/webportfolio/static/css/main.cac0fdae.chunk.css.map",
-    "static/js/2.09016766.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.09016766.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/webportfolio/static/media/Poppins-Thin.a61eaf4c.ttf",
-    "static/media/Profile.css": "/webportfolio/static/media/solid-color-image.1533debc.png"
+    "precache-manifest.f626e5c7ef0d9e243a01e281b1fb39c2.js": "/webportfolio/precache-manifest.f626e5c7ef0d9e243a01e281b1fb39c2.js",
+    "service-worker.js": "/webportfolio/service-worker.js",
+    "static/css/main.37300ba5.chunk.css.map": "/webportfolio/static/css/main.37300ba5.chunk.css.map",
+    "static/js/2.fe4ed999.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.fe4ed999.chunk.js.LICENSE.txt",
+    "static/media/Java-Developer-Skills.jpg": "/webportfolio/static/media/Java-Developer-Skills.612bf5b2.jpg",
+    "static/media/index.css": "/webportfolio/static/media/Poppins-Thin.25cd0f68.ttf",
+    "static/media/Profile.css": "/webportfolio/static/media/solid-color-image.2da91590.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.66cd2b96.js",
-    "static/js/2.09016766.chunk.js",
-    "static/css/main.cac0fdae.chunk.css",
-    "static/js/main.fcaf932e.chunk.js"
+    "static/js/runtime-main.667d8296.js",
+    "static/js/2.fe4ed999.chunk.js",
+    "static/css/main.37300ba5.chunk.css",
+    "static/js/main.2c377be5.chunk.js"
   ]
 }
