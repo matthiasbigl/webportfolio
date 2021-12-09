@@ -10,13 +10,12 @@ import Skills from "../PortoflioContainer/Skills/Skills"
 export default function Start() {
     return (
 
- <div className="App">
+ <>
      <Navbar/>
      <Profile/>
-     <Skills/>
      <ContactMe/>
 
- </div>
+</>
 
     );
 }

@@ -7,7 +7,7 @@ import Option from "./Options/Options";
 export default function UnderConstruction() {
     return (
         <div className="UnderConstruction">
-            <div className="container">
+            <div className="container1">
             <Preloader/>
         <h1>
           Website

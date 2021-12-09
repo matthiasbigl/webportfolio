@@ -2,22 +2,21 @@ import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Start from "./Pages/Start";
 import InConstruction from "./Pages/InConstruction";
-
-
+import'./index.css';
 
 
 
 function App() {
 
-    return (
+    return(
         <div className="App">
             
-            <Start/>
             <Router>
+            
                 <Routes>
-                    <Route path="/webportfolio/" component={<InConstruction/>}/>
-                    <Route path="/webportfolio/inConstruction" component={<InConstruction/>}/>
-                    <Route path="/webportfolio/start" component={<Start/>}/>
+                    <Route path="/" element={<InConstruction/>}/>
+                    <Route path="/inConstruction" element={<InConstruction/>}/>
+                    <Route path="/start" element={<Start/>}/>
                 </Routes>
             </Router>
         </div>
