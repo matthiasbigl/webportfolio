@@ -12,7 +12,7 @@ export default function Skills() {
                        <Carousel.Item>
                            <img
                                className="d-block w-100"
-                               src={require("../../assets/Skills/java.jpg").default}
+                               src={require("../../assets/Skills/java.jpg")}
                                alt="First slide"
                            />
                            <Carousel.Caption>
@@ -23,7 +23,7 @@ export default function Skills() {
                        <Carousel.Item>
                            <img
                                className="d-block w-100"
-                               src={require("../../assets/Skills/Java-Developer-Skills.jpg").default}
+                               src={require("../../assets/Skills/Java-Developer-Skills.jpg")}
                                alt="Second slide"
                            />
                            <Carousel.Caption>
@@ -34,7 +34,7 @@ export default function Skills() {
                        <Carousel.Item>
                            <img
                                className="d-block w-100"
-                               src={require("../../assets/Skills/Java-Developer-Skills.jpg").default}
+                               src={require("../../assets/Skills/Java-Developer-Skills.jpg")}
                                alt="Third slide"
                            />
                            <Carousel.Caption>
