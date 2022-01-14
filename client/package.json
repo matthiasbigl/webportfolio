@@ -1,0 +1,70 @@
+{
+  "homepage": "http://matthiasbigl.github.io/webportfolio",
+  "name": "react-web-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.17.2",
+    "gh-pages": "^3.2.3",
+    "joi": "^17.5.0",
+    "mdb-react-ui-kit": "^2.1.0",
+    "mdbootstrap": "^4.20.0",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.0.3",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-responsive-carousel": "^3.2.22",
+    "react-scripts": "^3.4.4",
+    "react-scroll": "^1.8.4",
+    "react-typical": "^0.1.3",
+    "rsuite": "^5.2.4",
+    "socket.io": "^4.4.1",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start-client": "react-scripts start",
+    "build": "react-scripts build && (cd ../server && npm install)",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "cd ../server && npm start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.0.2"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiasbigl/webportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthiasbigl/webportfolio/issues"
+  },
+  "description": "",
+  "proxy": "http://localhost:3000"
+}

@@ -1,0 +1,19 @@
+
+.SkillsContainer {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: fit-content;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+
+
+}
+
+.Carousel {
+    background-color: #0D7792;
+    heihght:1rem;
+    padding: 10rem 0 10rem 0;
+}

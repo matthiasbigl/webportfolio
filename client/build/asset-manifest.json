@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/webportfolio/static/css/main.5a0515c0.chunk.css",
+    "main.js": "/webportfolio/static/js/main.59a80015.chunk.js",
+    "main.js.map": "/webportfolio/static/js/main.59a80015.chunk.js.map",
+    "runtime-main.js": "/webportfolio/static/js/runtime-main.667d8296.js",
+    "runtime-main.js.map": "/webportfolio/static/js/runtime-main.667d8296.js.map",
+    "static/js/2.89992c2c.chunk.js": "/webportfolio/static/js/2.89992c2c.chunk.js",
+    "static/js/2.89992c2c.chunk.js.map": "/webportfolio/static/js/2.89992c2c.chunk.js.map",
+    "index.html": "/webportfolio/index.html",
+    "precache-manifest.120537bb83bc0dfffc14504c06a3d6ad.js": "/webportfolio/precache-manifest.120537bb83bc0dfffc14504c06a3d6ad.js",
+    "service-worker.js": "/webportfolio/service-worker.js",
+    "static/css/main.5a0515c0.chunk.css.map": "/webportfolio/static/css/main.5a0515c0.chunk.css.map",
+    "static/js/2.89992c2c.chunk.js.LICENSE.txt": "/webportfolio/static/js/2.89992c2c.chunk.js.LICENSE.txt",
+    "static/media/Java-Developer-Skills.jpg": "/webportfolio/static/media/Java-Developer-Skills.612bf5b2.jpg",
+    "static/media/index.css": "/webportfolio/static/media/Poppins-Thin.25cd0f68.ttf",
+    "static/media/Profile.css": "/webportfolio/static/media/solid-color-image.2da91590.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.667d8296.js",
+    "static/js/2.89992c2c.chunk.js",
+    "static/css/main.5a0515c0.chunk.css",
+    "static/js/main.59a80015.chunk.js"
+  ]
+}
