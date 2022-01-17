@@ -1,0 +1,54 @@
+.background{
+    width: 100%;
+    min-height: 100%;
+    background-color: #0D7792;
+
+
+}
+.LoginContainer {
+
+    background-color: #0D7792;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top:7%;
+    padding-bottom: 8%;
+    width: 100%;
+    height: 100%;
+
+
+}
+h1{
+    color: white;
+    font-size:1.5rem;
+    margin-bottom:2rem;
+
+}
+
+.primary-text {
+    color: aliceblue;
+    font-size:1rem;
+}
+
+
+
+
+
+.Form-Parent {
+    box-shadow: 5px 5px 10px 1px #000;
+    font-size: 1rem;
+    background-color: #243B53;
+    border: 2px outset linen;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.Form-Parent Form {
+    margin: 10%;
+}
+
+.submitBtn {
+    padding-top: 2rem;
+    align-content: center;
+}

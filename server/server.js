@@ -1,27 +1,14 @@
-//server.js
+var app = require('express')();
+var http = require('http').createServer(app);
+const PORT = 3001;
+var io = require('socket.io')(http);
+const STATIC_CHANNELS = ['global_notifications', 'global_chat'];
 
-require("dotenv").config();
-const express =require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const morgan = require('morgan');
-
-const app = express();
-
-const PORT= process.env.PORT;
-
-app.use(bodyParser.json());
-
-const buildPath = path.join(__dirname, '..', 'build');
-app.use(express.static(buildPath));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(buildPath, 'index.html'));
-});
-app.use(morgan('dev'));
-
-
-app.listen(PORT, ()=>{
-    console.log(`server is listening  on ${PORT}`);
+http.listen(PORT, () => {
+    console.log(`listening on *:${PORT}`);
 });
 
-module.exports = app;
+io.on('connection', (socket) => { /* socket object may be used to send specific messages to the new connected client */
+    console.log('new client connected');
+    socket.emit('connection', null);
+});
