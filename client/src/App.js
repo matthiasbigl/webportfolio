@@ -2,10 +2,10 @@ import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Start from "./Pages/Start";
 import InConstruction from "./Pages/InConstruction";
-import Login from "./Pages/Login";
+import Login from "./Pages/Chat/Login";
 import'./index.css';
 import socketClient  from "socket.io-client";
-import Chat from "./Pages/Chat/Chat";
+
 const SERVER = "http://127.0.0.1:3001";
 
 
@@ -27,10 +27,9 @@ function App() {
                     <Route path="/" element={<InConstruction/>}/>
                     </Route>
                     <Route path="/webportfolio/" element={<InConstruction/>}/>
-                    <Route path="webportfolio/inConstruction" element={<InConstruction/>}/>
-                    <Route path="webportfolio/chat" element={<Login/>}/>
-                    <Route path="webportfolio/chatapp" element={<Chat/>}/>
-                    <Route path="webportfolio/start" element={<Start/>}/>
+                    <Route path="/webportfolio/inConstruction" element={<InConstruction/>}/>
+                    <Route path="/webportfolio/chat" element={<Login/>}/>
+                    <Route path="/webportfolio/start" element={<Start/>}/>
                 </Routes>
             </Router>
         </div>
