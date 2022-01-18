@@ -58,13 +58,14 @@
 
 .profile-picture {
 
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     height: 380px;
     width: 380px;
-    margin-left:8rem;
+
+    margin-left:100px;
 }
 
 .profile-picture-background {

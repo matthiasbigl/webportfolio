@@ -1,29 +1,31 @@
 import React from "react";
 import "../Styles/Login.css"
-import {Button, InputGroup, FormControl, Form} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Button, Form} from "react-bootstrap";
+
 import socketClient from "socket.io-client";
+
 
 
 export default function Login() {
 
     const socket = socketClient(process.env.WEBPORTFOLIO_CHATSERVER);
+    var username;
+
 
 
 
     function login(e) {
-        // Benutzername aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
+        e.preventDefault();
+        console.log(e.target.userName.value)
 
-        alert("user loged in");
+       socket.emit('add user', e.target.userName.value);
+        e.target.reset()
 
-        // Prüfen, ob der Benutzername nicht leer ist
-
-
-            socket.emit('add user', "user");
-
-
-
+        
     }
+
+
+
 
     return (
         <div className="background">
@@ -35,9 +37,9 @@ export default function Login() {
                         <h1>
                             Enter User name to join the chat
                         </h1>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Group className="mb-3" controlId="login.username">
                             <Form.Label className="primary-text" name="username">Username</Form.Label>
-                            <Form.Control type="text" value={this.state.val} placeholder="@" name="userName"/>
+                            <Form.Control type="text" placeholder="@" name="userName"/>
                             <Form.Check
                                 type="checkbox"
                                 label="By checking this you accept the terms and conditions"
