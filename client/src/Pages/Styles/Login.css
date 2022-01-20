@@ -1,10 +1,19 @@
-.background{
+.background {
     width: 100%;
     min-height: 100%;
     background-color: #0D7792;
 
 
 }
+
+.checkbox {
+    padding-top: 5%;
+}
+.ChatApp{
+    height: 100vh;
+    background-color: #0D7792;
+}
+
 .LoginContainer {
 
     background-color: #0D7792;
@@ -12,27 +21,31 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top:7%;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
+    padding-top: 5%;
     width: 100%;
     height: 100%;
 
 
 }
-h1{
+
+h1 {
     color: white;
-    font-size:1.5rem;
-    margin-bottom:2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 
 }
 
 .primary-text {
+
     color: aliceblue;
-    font-size:1rem;
+    font-size: 1rem;
 }
-
-
-
+.input-text {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1rem;
+}
 
 
 .Form-Parent {

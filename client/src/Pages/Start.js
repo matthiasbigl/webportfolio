@@ -5,7 +5,7 @@ import Profile from "../PortoflioContainer/Home/Profile";
 import Navbar from "../PortoflioContainer/Navbar/navbar";
 import ContactMe from "../PortoflioContainer/ContactMe/ContactMe";
 import Skills from "../PortoflioContainer/Skills/Skills"
-import Login from "./Chat/Login";
+import ChatApp from "./Chat/ChatApp";
 
 
 export default function Start() {

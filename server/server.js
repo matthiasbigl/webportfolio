@@ -1,6 +1,6 @@
 var app = require('express')();
 var http = require('http').createServer(app);
-const PORT = 3001;
+const PORT = 9001;
 var io = require('socket.io')(http);
 const STATIC_CHANNELS = ['global_notifications', 'global_chat'];
 
@@ -18,6 +18,7 @@ io.on('connection', function (socket) { /* socket object may be used to send spe
     socket.on('add user', function (username) {
         // Benutzername wird in der aktuellen Socket-Verbindung gespeichert
         socket.username = username;
+        console.log(username)
         addedUser = true;
 
         // Dem Client wird die "login"-Nachricht geschickt, damit er weiß,
