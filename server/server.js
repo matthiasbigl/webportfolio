@@ -1,7 +1,11 @@
 var app = require('express')();
 var http = require('http').createServer(app);
 const PORT = 9001;
-var io = require('socket.io')(http);
+var io = require('socket.io')(http,{
+    cors:{
+        origin:'*',
+    }
+});
 const STATIC_CHANNELS = ['global_notifications', 'global_chat'];
 
 http.listen(PORT, () => {
@@ -28,6 +32,15 @@ io.on('connection', function (socket) { /* socket object may be used to send spe
 
         // Alle Clients informieren, dass ein neuer Benutzer da ist.
         socket.broadcast.emit('user joined', socket.username);
+    });
+    socket.on('new message', function (data) {
+
+        console.log(data)
+
+        // Sende die Nachricht an alle Clients
+        socket.broadcast.emit('new message', {
+            message: data
+        });
     });
 
 
