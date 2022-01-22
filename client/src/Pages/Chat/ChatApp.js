@@ -5,18 +5,31 @@ import {Button, Form, FormControl, InputGroup} from "react-bootstrap";
 import socketClient from "socket.io-client";
 
 
+const socket = socketClient("http://127.0.0.1:9001");
+const initialList = [
+];
+let username="";
+
+
 export default function ChatApp() {
 
-    const [show, setShow] = React.useState(true);
 
-    const socket = socketClient("http://172.18.8.52:9001");
+    const [list, setList] = React.useState(initialList);
+    const [show, setShow] = React.useState(true);
+    const [messsage, setMesssage] = React.useState('');
+
+
+
+
     let connected = false;
+
+
 
 
     function login(e) {
         e.preventDefault();
 
-        const username = e.target.userName.value;
+         username = e.target.userName.value;
 
         console.log(e.target.confirmation.checked)
 
@@ -26,59 +39,55 @@ export default function ChatApp() {
             socket.emit('add user', username);
             e.target.reset()
             setShow(false)
-
-
         }
 
         console.log(username);
     }
 
+    function handleChange(event) {
+        setMesssage(event.target.value);
+    }
 
-    /*
+    function log(message) {
+        if(list.length>=25){
+            list.shift();
+
+        }
+        const newList = list.concat(message);
+
+        setList(newList);
+        setMesssage("");
+    }
+    function sendMessage(){
+        socket.emit('new message',messsage);
+
+    }
+    socket.on('new messages', function(data) {
+        alert("new message received")
+        console.log(data);
+        log(data)
+
+    });
+
+
+
+
+
+
+
+
 
 
     socket.on('login', function (data) {
         connected = true;
-        log("Willkommen beim Chat!");
+
     });
-
-    // Server schickt "new message": Neue Nachricht zum Chat-Protokoll hinzufügen
-    socket.on('new message', function (data) {
-        addChatMessage(data);
-    });
-
-    // Server schickt "user joined": Neuen Benutzer im Chat-Protokoll anzeigen
-    socket.on('user joined', function (data) {
-        log(data + ' joined the channel');
-    });
-
-    // Server schickt "user left": Benutzer, der gegangen ist, im Chat-Protokoll anzeigen
-    socket.on('user left', function (data) {
-        log(data + ' left the channel');
-    });
-    function sendMessage() {
-        // Nachricht aus Eingabefeld holen (ohne Leerzeichen am Anfang oder Ende).
-        var message =
-
-        // Prüfen, ob die Nachricht nicht leer ist und wir verbunden sind.
-        if (message && connected) {
-            // Eingabefeld auf leer setzen
-            $inputMessage.val('');
-
-            // Chat-Nachricht zum Chatprotokoll hinzufügen
-            addChatMessage({username: username, message: message});
-
-            // Server über neue Nachricht informieren. Der Server wird die Nachricht
-            // an alle anderen Clients verteilen.
-            socket.emit('new message', message);
+    function handleKeyDown(event) {
+        if(event.keyCode === 13) {
+            sendMessage(event);
         }
     }
-    function addChatMessage(data) {
 
-
-    }
-
-*/
 
 
 
@@ -127,11 +136,16 @@ return (
 
                     </div>
 
-                </div> : <div className="Chat-Container-Parent">
+                </div> :
+                    <div className="Chat-Container-Parent">
                     <div className="ChatApp-Container">
                         <br/>
                         <h1>Welcome to the Chat</h1>
                         <ul className="Messages">
+                            {list.map((item) => (
+                                <li key={item.id}>{item.message}</li>
+                            ))}
+
                         </ul>
 
 
@@ -141,8 +155,11 @@ return (
                                 <FormControl
                                     placeholder="Enter message"
                                     name="input"
+                                    value={messsage}
+                                    onChange={handleChange}
+                                    onKeyDown={handleKeyDown}
                                 />
-                                <input className="sendButton" type="button" value="Send"/>
+                                <input className="sendButton" onClick={sendMessage} type="button" value="Send"/>
                             </InputGroup>
 
 

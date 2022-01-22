@@ -15,6 +15,9 @@ http.listen(PORT, () => {
 io.on('connection', function (socket) { /* socket object may be used to send specific messages to the new connected client */
     console.log('new client connected');
     socket.emit('connection', null);
+
+
+    // Funktion, die darauf reagiert, wenn sich der Benutzer anmeldet
     let addedUser = false;
 
 
@@ -29,18 +32,24 @@ io.on('connection', function (socket) { /* socket object may be used to send spe
         // dass er erfolgreich angemeldet wurde.
         socket.emit('login');
 
-
         // Alle Clients informieren, dass ein neuer Benutzer da ist.
         socket.broadcast.emit('user joined', socket.username);
     });
-    socket.on('new message', function (data) {
 
-        console.log(data)
+    socket.on('new message', function (data) {
+        console.log(socket.username+": "+data)
+        const message=socket.username+": "+data;
+
+
 
         // Sende die Nachricht an alle Clients
         socket.broadcast.emit('new message', {
-            message: data
+            message
+
+
         });
+
+
     });
 
 
