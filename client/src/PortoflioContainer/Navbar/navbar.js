@@ -8,24 +8,26 @@ export default function navbar() {
             <div className="navbar-container">
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Container>
-                    
-                        <Navbar.Brand href="#home">
-                            Matthias Bigl&emsp;
-                            <i className="fa fa-code"></i>
+
+                        <Navbar.Brand href="/webportfolio/start">
+                            <div className="name"> Matthias Bigl&emsp;
+                                <i className="fa fa-code">
+                                </i>
+                            </div>
                         </Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" className={"items"}/>
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <div className="items">
+                            <div>
                                 <Nav>
-                                    <Nav.Link href="/webportfolio/chat">Chat</Nav.Link>
+                                    <Nav.Link href="#Skills">Skills</Nav.Link>
                                     <Nav.Link href="#Contact-Me">Contact Me</Nav.Link>
-                                    <Nav.Link href="#References">References</Nav.Link>
+                                    <Nav.Link href="../chat">Chat</Nav.Link>
                                 </Nav>
                             </div>
 
                         </Navbar.Collapse>
-                        </Container>
-                
+                    </Container>
+
                 </Navbar>
             </div>
 

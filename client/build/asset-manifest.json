@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/webportfolio/static/css/main.9938f076.css",
-    "main.js": "/webportfolio/static/js/main.013fd562.js",
-    "static/media/Java-Developer-Skills.jpg": "/webportfolio/static/media/Java-Developer-Skills.e1549dd517c326adeb59.jpg",
-    "static/media/Poppins-Thin.ttf": "/webportfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
-    "static/media/Poppins-Light.ttf": "/webportfolio/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
-    "static/media/Poppins-Regular.ttf": "/webportfolio/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
-    "static/media/Poppins-Medium.ttf": "/webportfolio/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
-    "static/media/Poppins-SemiBold.ttf": "/webportfolio/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
-    "static/media/Poppins-Bold.ttf": "/webportfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
-    "static/media/Poppins-ExtraBold.ttf": "/webportfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
-    "static/media/solid-color-image.png": "/webportfolio/static/media/solid-color-image.1533debc3cdc9cc706c4.png",
-    "index.html": "/webportfolio/index.html",
-    "main.9938f076.css.map": "/webportfolio/static/css/main.9938f076.css.map",
-    "main.013fd562.js.map": "/webportfolio/static/js/main.013fd562.js.map"
+    "main.css": "/static/css/main.c3d5a74b.css",
+    "main.js": "/static/js/main.5a41aa74.js",
+    "static/media/Poppins-Thin.ttf": "/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
+    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
+    "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
+    "static/media/solid-color-image.png": "/static/media/solid-color-image.1533debc3cdc9cc706c4.png",
+    "index.html": "/index.html",
+    "main.c3d5a74b.css.map": "/static/css/main.c3d5a74b.css.map",
+    "main.5a41aa74.js.map": "/static/js/main.5a41aa74.js.map"
   },
   "entrypoints": [
-    "static/css/main.9938f076.css",
-    "static/js/main.013fd562.js"
+    "static/css/main.c3d5a74b.css",
+    "static/js/main.5a41aa74.js"
   ]
 }

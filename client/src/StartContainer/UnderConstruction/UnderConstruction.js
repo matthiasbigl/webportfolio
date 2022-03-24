@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../UnderConstruction.css";
+import "./UnderConstruction.css";
 import Preloader from "./Preloader/Preloader";
 import Option from "./Options/Options";
 
@@ -8,15 +8,15 @@ export default function UnderConstruction() {
     return (
         <div className="UnderConstruction">
             <div className="container1">
-            <Preloader/>
-        <h1>
-          Website
-          <br />
-         Under COnstruction
-        </h1>
-        <Option/>
+                <Preloader/>
+                <h1 className={"underConstructionHeading"}>
+                    Website
+                    <br />
+                    Under COnstruction
+                </h1>
+                <Option/>
             </div>
-    
+
         </div>
 
 

@@ -11,7 +11,7 @@ export default function ContactUs() {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_xpqw3ri', 'template_b9xnr48', e.target, 'user_S2EFRasWeJBpGtvAoLiCb')
+        emailjs.sendForm('service_xpqw3ri', 'template_s8p5deh', e.target, 'user_S2EFRasWeJBpGtvAoLiCb')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -34,8 +34,12 @@ export default function ContactUs() {
                         <Form.Label className="primary-text">Email address</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" name="email"/>
                     </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                        <Form.Label className="primary-text">Subject</Form.Label>
+                        <Form.Control type="text" placeholder="Subject" name="subject"/>
+                    </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label className="primary-text">Example textarea</Form.Label>
+                        <Form.Label className="primary-text">Message</Form.Label>
                         <Form.Control as="textarea" rows={5} name="message"/>
                     </Form.Group>
                     <div className="submitBtn">

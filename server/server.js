@@ -2,10 +2,12 @@ var app = require('express')();
 var http = require('http').createServer(app);
 const PORT = 9001;
 var io = require('socket.io')(http,{
+
     cors:{
         origin:'*',
     }
 });
+io.eio.pingInterval=1000;
 const STATIC_CHANNELS = ['global_notifications', 'global_chat'];
 
 http.listen(PORT, () => {
@@ -14,7 +16,7 @@ http.listen(PORT, () => {
 
 io.on('connection', function (socket) { /* socket object may be used to send specific messages to the new connected client */
     console.log('new client connected');
-    socket.emit('connection', null);
+
 
 
     // Funktion, die darauf reagiert, wenn sich der Benutzer anmeldet
@@ -36,20 +38,27 @@ io.on('connection', function (socket) { /* socket object may be used to send spe
         socket.broadcast.emit('user joined', socket.username);
     });
 
-    socket.on('new message', function (data) {
-        console.log(socket.username+": "+data)
-        const message=socket.username+": "+data;
 
+    socket.on('new message', function (data) {
+        if (!addedUser){
+            return;
+        }
+        console.log(socket.username+": "+data)
 
 
         // Sende die Nachricht an alle Clients
         socket.broadcast.emit('new message', {
-            message
-
-
+            username: socket.username,
+            message: data
         });
 
 
+    });
+    socket.on('disconnect', function () {
+        if (addedUser) {
+            // Alle über den Abgang des Benutzers informieren
+            socket.broadcast.emit('user left', socket.username);
+        }
     });
 
 

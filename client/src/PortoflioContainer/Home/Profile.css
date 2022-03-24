@@ -12,7 +12,7 @@
 }
 
 .profile-parent {
-    margin-top:2.5rem;
+    margin-top: 5em;
     display: flex;
     align-items: center;
     color: aliceblue;
@@ -26,7 +26,7 @@
 .profile-details-role {
     display: flex;
     flex-direction: column;
-    margin: 14px 0 24px 0;
+    margin: 0em 0 1.5em 0;
 }
 
 .profile-details-role h1 {

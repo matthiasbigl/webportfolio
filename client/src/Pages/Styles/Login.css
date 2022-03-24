@@ -7,42 +7,42 @@
 }
 
 .checkbox {
-    padding-top: 5%;
+    padding-top: 5% !important;
 }
 .ChatApp{
-    height: 100vh;
+    height: 100vh !important;
     background-color: #0D7792;
 }
 
 .Login-Container {
 
-    background-color: #0D7792;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    background-color: #0D7792 ;
+    display: flex ;
+    align-items: center ;
+    text-align: center ;
+    justify-content: center ;
     padding-bottom: 5%;
-    padding-top: 5%;
+    padding-top: 5% ;
     width: 100%;
-    height: 100%;
+    height: 100% ;
 
 
 }
 .Chat-Container-Parent {
 
     background-color: #0D7792;
-    display: flex;
-    align-items: center;
+    display: flex ;
+    align-items: center ;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
 
 
 }
 
 
 h1 {
-    text-align: center;
+    text-align: center ;
     color: white;
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -52,7 +52,7 @@ h1 {
 .primary-text {
 
     color: aliceblue;
-    font-size: 1rem;
+    font-size: 1rem ;
 }
 .input-text {
     text-align: center;
@@ -71,8 +71,19 @@ h1 {
 }
 .Messages {
     list-style-type: none;
+    overflow-y: scroll ;
+    /*display: flex;
+    flex-direction: column-reverse;*/
     height: 77%;
+    font-size: 1.25rem;
+
 }
+.list{
+    border-bottom: 1px solid lightcyan;
+
+}
+
+
 .ChatInput{
 
     /*align-items: center;
@@ -106,6 +117,14 @@ if (bier == geil || true) {
 
 
 }
+.file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
 .ChatApp-Container {
      box-shadow: 5px 5px 10px 1px #000;
      font-size: 1rem;
@@ -113,7 +132,7 @@ if (bier == geil || true) {
      border: 2px outset linen;
      border-radius: 25px;
      width: 95%;
-     height: 95%;
+     height: 85%;
  }
 .sendButton{
     border-radius: 0 0.5rem 0.5rem 0;
@@ -123,10 +142,18 @@ if (bier == geil || true) {
 
 
 }
+.uploadFile{
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+}
 
 
 .Form-Parent Form {
     margin: 10%;
+}
+.lastMessage{
+    display: none;
 }
 
 .submitBtn {

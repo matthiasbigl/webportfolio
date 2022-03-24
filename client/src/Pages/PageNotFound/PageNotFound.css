@@ -1,0 +1,30 @@
+.PageNotFound-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: fit-content;
+    background: linear-gradient(180deg, #243b53 0%, #0d7792 100%);
+
+}
+.highlighted-text{
+    color:cyan;
+}
+
+.Typical{
+
+    font-size: 7rem !important;
+}
+.ReturnToPage{
+    font-size: 2rem;
+}
+.Button{
+    padding-top: 3rem;
+}
+
+
+
+
+
+
