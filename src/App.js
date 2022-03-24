@@ -7,7 +7,7 @@ import'./index.css';
 import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import socketClient  from "socket.io-client";
 
-const SERVER = "http://127.0.0.1:3001";
+const SERVER = "http://127.0.0.1:5000";
 
 
 
@@ -21,7 +21,7 @@ function App() {
     return(
         <div className="App">
 
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
 
                 <Routes>
                     <Route>
