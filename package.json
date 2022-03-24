@@ -8,7 +8,6 @@
     "emailjs-com": "^3.2.0",
     "engine.io-parser": "^5.0.3",
     "express": "^4.17.2",
-    "gh-pages": "^3.2.3",
     "joi": "^17.5.0",
     "mdb-react-ui-kit": "^2.1.0",
     "mdbootstrap": "^4.20.0",
@@ -33,7 +32,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start  ",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -60,16 +59,11 @@
     "react-router-dom": "^6.0.2"
   },
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matthiasbigl/webportfolio.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/matthiasbigl/webportfolio/issues"
   },
-  "description": "",
-  "proxy": "http://localhost:3000"
+  "description": ""
 }

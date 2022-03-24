@@ -1,14 +1,27 @@
 var app = require('express')();
 var http = require('http').createServer(app);
-const PORT = 9001;
+const PORT = process.env.PORT||5000;
+const path=require('path');
+const express = require("express");
 var io = require('socket.io')(http,{
 
     cors:{
         origin:'*',
     }
 });
+
+
 io.eio.pingInterval=1000;
 const STATIC_CHANNELS = ['global_notifications', 'global_chat'];
+
+
+if(process.env.NODE_ENV==="production"){
+    app.use(express.static('build'))
+    app.get('*',(req, res) => {
+        req.sendFile(path.resolve(__dirname,'build','index.html'));
+        }
+    )
+}
 
 http.listen(PORT, () => {
     console.log(`listening on *:${PORT}`);
